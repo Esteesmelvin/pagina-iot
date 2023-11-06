@@ -1,0 +1,49 @@
+.container {
+ /* Ruta relativa a la imagen en src/assets */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    min-height: 100vh; /* Establece la altura mínima del contenedor al 100% del viewport */
+  }
+
+  .container::before {
+    content: '';
+    background: url('../assets/Cali.jpg'); /* Ruta relativa a la imagen en src/assets */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px) brightness(0.4) sepia(50%) hue-rotate(200deg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.header {
+    background-color: #007bff; /* Fondo azul */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    
+  }
+  
+  .header h1 {
+    color: white; /* Texto blanco */
+  }
+
+  .custom-div {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    padding: 20px;
+    transition: transform 0.3s;
+    border-radius: 10px; 
+  }
+  
+  .custom-div:hover {
+    transform: scale(1.1); /* Escala el div al pasar el mouse por encima */
+  }
+
+  .red-div {
+    background-color: red;
+  }
